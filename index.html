@@ -1,418 +1,726 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Plombier professionnel disponible 24/7 pour tous vos travaux de plomberie. Intervention rapide, devis gratuit. Appelez maintenant!">
-  <meta name="keywords" content="plombier, plomberie, fuite d'eau, debouchage, chauffe-eau, installation sanitaire, urgence plomberie">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="PlombiPro">
-  <title>PlombiPro - Plombier Professionnel | Dépannage 24/7 & Devis Gratuit</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Plombier professionnel disponible 24h/24 et 7j/7. Intervention rapide pour fuite, débouchage, chauffe-eau et rénovation salle de bain. Devis gratuit."
+    />
+    <meta
+      name="keywords"
+      content="plombier, fuite d'eau, débouchage, chauffe-eau, rénovation salle de bain, urgence plomberie, plombier 24h"
+    />
+    <meta name="author" content="PlombiPro" />
+    <meta name="robots" content="index, follow" />
+    <title>PlombiPro | Plombier Professionnel 24h/24 - Devis Gratuit</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta
+      property="og:title"
+      content="PlombiPro - Plombier Professionnel 24h/24"
+    />
+    <meta
+      property="og:description"
+      content="Intervention rapide, devis gratuit. Votre plombier de confiance."
+    />
+    <meta property="og:type" content="website" />
 
-  <link rel="stylesheet" href="styles.css">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Plumber",
-    "name": "PlombiPro",
-    "description": "Plombier professionnel disponible 24/7",
-    "telephone": "+33-1-23-45-67-89",
-    "priceRange": "$$",
-    "openingHours": "Mo-Su 00:00-23:59",
-    "areaServed": "Paris et Île-de-France"
-  }
-  </script>
- 
-</head>
-<body>
-  <header class="header" id="header">
-    <div class="container">
-      <nav class="nav">
-        <a href="#" class="logo">
-          <span class="logo-icon">🔧</span>
-          <span class="logo-text">Plombi<span class="highlight">Pro</span></span>
-        </a>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#pourquoi-nous">Pourquoi Nous</a></li>
-          <li><a href="#temoignages">Témoignages</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <a href="tel:+33123456789" class="btn-phone">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-          </svg>
-          01 23 45 67 89
-        </a>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </nav>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="container">
+        <div>
+          🕐 Disponible <strong>24h/24 et 7j/7</strong> — Intervention en moins
+          de <strong>30 minutes</strong>
+        </div>
+        <div class="top-bar__right">
+          <span class="pulse-dot"></span> En ligne maintenant
+          <span>📞 <a href="tel:+33123456789">01 23 45 67 89</a></span>
+        </div>
+      </div>
     </div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-bg"></div>
+    <header class="header" role="banner">
       <div class="container">
-        <div class="hero-content">
-          <div class="hero-badge">
-            <span class="badge-dot"></span>
-            Disponible 24h/24 - 7j/7
-          </div>
-          <h1>Plombier Professionnel<br>à Votre Service</h1>
-          <p>Intervention rapide en moins de 30 minutes. Dépannage, installation et rénovation de plomberie. Devis gratuit et sans engagement.</p>
-          <div class="hero-buttons">
-            <a href="tel:+33123456789" class="btn btn-primary">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-              </svg>
-              Appeler Maintenant
-            </a>
-            <a href="#contact" class="btn btn-secondary">Devis Gratuit</a>
-          </div>
-          <div class="hero-stats">
-            <div class="stat">
-              <span class="stat-number">1500+</span>
-              <span class="stat-label">Clients Satisfaits</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat">
-              <span class="stat-number">15 ans</span>
-              <span class="stat-label">d'Expérience</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat">
-              <span class="stat-number">30 min</span>
-              <span class="stat-label">Temps d'Intervention</span>
-            </div>
-          </div>
+        <a href="#" class="logo" aria-label="PlombiPro - Accueil">
+          <div class="logo__icon">🔧</div>
+          Plombi<span>Pro</span>
+        </a>
+        <nav
+          class="nav-links"
+          role="navigation"
+          aria-label="Navigation principale"
+        >
+          <a href="#services">Services</a>
+          <a href="#avantages">Avantages</a>
+          <a href="#temoignages">Avis</a>
+          <a href="#zones">Zones</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <div class="nav-cta">
+          <a href="tel:+33123456789" class="nav-phone">📞 01 23 45 67 89</a>
+          <a href="#devis" class="btn btn-primary">Devis Gratuit</a>
         </div>
+        <button class="mobile-toggle" aria-label="Menu" id="mobileToggle">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-    </section>
+    </header>
 
-    <section class="urgency-banner">
+    <section class="hero" role="banner">
       <div class="container">
-        <div class="urgency-content">
-          <span class="urgency-icon">🚨</span>
-          <strong>Urgence plomberie ?</strong>
-          <span>Intervention en moins de 30 minutes - Appelez le <a href="tel:+33123456789">01 23 45 67 89</a></span>
+        <div class="hero__content">
+          <h1>
+            Votre plombier<br />de confiance<br /><span class="highlight"
+              >disponible 24h/24</span
+            >
+          </h1>
+          <p>
+            Intervention rapide pour toutes vos urgences plomberie. Fuite,
+            débouchage, chauffe-eau, rénovation — nos experts certifiés
+            interviennent en moins de 30 minutes.
+          </p>
+          <div class="hero__buttons">
+            <a href="tel:+33123456789" class="btn btn-accent btn-lg"
+              >📞 Urgence : 01 23 45 67 89</a
+            >
+            <a href="#devis" class="btn btn-outline btn-lg"
+              >Demander un devis gratuit →</a
+            >
+          </div>
+          <div class="hero__trust">
+            <div class="trust-item">
+              <div class="trust-icon">⭐</div>
+              <div class="trust-text">
+                <strong>4.9/5</strong>+500 avis clients
+              </div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-icon">🛡️</div>
+              <div class="trust-text">
+                <strong>Garantie décennale</strong>Assurance complète
+              </div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-icon">💰</div>
+              <div class="trust-text">
+                <strong>Devis gratuit</strong>Sans engagement
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
 
-    <section class="services" id="services">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Nos Services</span>
-          <h2>Des Solutions Pour Chaque Besoin</h2>
-          <p>Nous offrons une gamme complète de services de plomberie pour les particuliers et les professionnels.</p>
-        </div>
-        <div class="services-grid">
-          <div class="service-card">
-            <div class="service-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
-              </svg>
-            </div>
-            <h3>Recherche de Fuites</h3>
-            <p>Détection et réparation de fuites d'eau avec équipement professionnel. Intervention rapide pour limiter les dégâts.</p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                <polyline points="14 2 14 8 20 8"/>
-                <line x1="16" y1="13" x2="8" y2="13"/>
-                <line x1="16" y1="17" x2="8" y2="17"/>
-              </svg>
-            </div>
-            <h3>Debouchage Canalisations</h3>
-            <p>Débouchage efficace de vos canalisations, éviers, toilettes et douches avec matériel haute pression.</p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
-                <circle cx="12" cy="12" r="4"/>
-              </svg>
-            </div>
-            <h3>Chauffe-Eau & Chaudière</h3>
-            <p>Installation, entretien et réparation de chauffe-eau et chaudières toutes marques. Diagnostic complet.</p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                <polyline points="9 22 9 12 15 12 15 22"/>
-              </svg>
-            </div>
-            <h3>Rénovation Salle de Bains</h3>
-            <p>Transformation complète de votre salle de bains. Conception sur mesure et installation clé en main.</p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                <line x1="8" y1="21" x2="16" y2="21"/>
-                <line x1="12" y1="17" x2="12" y2="21"/>
-              </svg>
-            </div>
-            <h3>Installation Sanitaire</h3>
-            <p>Pose de robinetterie, WC, douche, baignoire et tous équipements sanitaires. Travail soigné et garanti.</p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12 6 12 12 16 14"/>
-              </svg>
-            </div>
-            <h3>Dépannage Urgent</h3>
-            <p>Service d'urgence disponible 24h/24 pour les pannes et problèmes majeurs. Intervention immédiate.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="why-us" id="pourquoi-nous">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Pourquoi Nous Choisir</span>
-          <h2>Votre Plombier de Confiance</h2>
-          <p>Des professionnels qualifiés à votre service pour tous vos travaux de plomberie.</p>
-        </div>
-        <div class="why-grid">
-          <div class="why-item">
-            <div class="why-number">01</div>
-            <h3>Intervention Rapide</h3>
-            <p>Nous intervenons en moins de 30 minutes pour les urgences. Votre temps est précieux.</p>
-          </div>
-          <div class="why-item">
-            <div class="why-number">02</div>
-            <h3>Devis Gratuit</h3>
-            <p>Estimation gratuite et transparente avant chaque intervention. Pas de surprise sur la facture.</p>
-          </div>
-          <div class="why-item">
-            <div class="why-number">03</div>
-            <h3>Artisans Certifiés</h3>
-            <p>Nos plombiers sont qualifiés et certifiés. Travail conforme aux normes en vigueur.</p>
-          </div>
-          <div class="why-item">
-            <div class="why-number">04</div>
-            <h3>Garantie Décennale</h3>
-            <p>Tous nos travaux sont couverts par une garantie décennale pour votre tranquillité.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="testimonials" id="temoignages">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Témoignages</span>
-          <h2>Ce Que Disent Nos Clients</h2>
-          <p>Découvrez les avis de nos clients satisfaits.</p>
-        </div>
-        <div class="testimonials-grid">
-          <div class="testimonial-card">
-            <div class="stars">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </div>
-            <p>"Intervention rapide et travail impeccable. Mon plombier a résolu mon problème de fuite en un rien de temps. Je recommande vivement !"</p>
-            <div class="testimonial-author">
-              <div class="author-avatar">ML</div>
-              <div>
-                <strong>Marie Laurent</strong>
-                <span>Paris 15ème</span>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="stars">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </div>
-            <p>"Excellent service pour la rénovation de ma salle de bains. Équipe professionnelle, respect des délais et du budget. Résultat au-delà de mes attentes."</p>
-            <div class="testimonial-author">
-              <div class="author-avatar">PD</div>
-              <div>
-                <strong>Philippe Durand</strong>
-                <span>Boulogne-Billancourt</span>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="stars">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </div>
-            <p>"Appelé un dimanche soir pour une urgence, le plombier est arrivé en 20 minutes. Tarif honnête même le week-end. Très satisfaite du service."</p>
-            <div class="testimonial-author">
-              <div class="author-avatar">SB</div>
-              <div>
-                <strong>Sophie Bernard</strong>
-                <span>Versailles</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="contact-wrapper">
-          <div class="contact-info">
-            <span class="section-tag">Contact</span>
-            <h2>Demandez Votre Devis Gratuit</h2>
-            <p>Remplissez le formulaire ou appelez-nous directement. Nous vous répondons dans l'heure.</p>
-            <div class="contact-details">
-              <div class="contact-item">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                </svg>
-                <div>
-                  <strong>Téléphone</strong>
-                  <a href="tel:+33123456789">01 23 45 67 89</a>
-                </div>
-              </div>
-              <div class="contact-item">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                  <polyline points="22,6 12,13 2,6"/>
-                </svg>
-                <div>
-                  <strong>Email</strong>
-                  <a href="mailto:contact@plombipro.fr">contact@plombipro.fr</a>
-                </div>
-              </div>
-              <div class="contact-item">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                  <circle cx="12" cy="10" r="3"/>
-                </svg>
-                <div>
-                  <strong>Adresse</strong>
-                  <span>Paris et Île-de-France</span>
-                </div>
-              </div>
-              <div class="contact-item">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10"/>
-                  <polyline points="12 6 12 12 16 14"/>
-                </svg>
-                <div>
-                  <strong>Horaires</strong>
-                  <span>24h/24 - 7j/7</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <form class="contact-form" id="contactForm">
-            <div class="form-group">
-              <label for="name">Nom complet *</label>
-              <input type="text" id="name" name="name" required placeholder="Votre nom">
-            </div>
+        <div class="hero__form-card" id="devis">
+          <h3>📋 Devis Gratuit en 2 min</h3>
+          <p>Réponse garantie sous 1 heure</p>
+          <form id="quoteForm" aria-label="Formulaire de devis">
             <div class="form-row">
               <div class="form-group">
-                <label for="phone">Téléphone *</label>
-                <input type="tel" id="phone" name="phone" required placeholder="06 12 34 56 78">
+                <label for="name">Nom complet *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Jean Dupont"
+                  required
+                />
               </div>
               <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="votre@email.fr">
+                <label for="phone">Téléphone *</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="06 12 34 56 78"
+                  required
+                />
               </div>
             </div>
             <div class="form-group">
-              <label for="service">Type de service</label>
-              <select id="service" name="service">
-                <option value="">Sélectionnez un service</option>
-                <option value="fuite">Recherche de fuites</option>
-                <option value="debouchage">Débouchage canalisations</option>
-                <option value="chauffe-eau">Chauffe-eau / Chaudière</option>
-                <option value="renovation">Rénovation salle de bains</option>
-                <option value="installation">Installation sanitaire</option>
-                <option value="urgence">Dépannage urgent</option>
-                <option value="autre">Autre</option>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="jean@email.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="service">Type d'intervention *</label>
+              <select id="service" name="service" required>
+                <option value="">-- Sélectionnez --</option>
+                <option value="urgence">🚨 Urgence / Fuite</option>
+                <option value="debouchage">🚿 Débouchage</option>
+                <option value="chauffe-eau">🔥 Chauffe-eau</option>
+                <option value="renovation">🛁 Rénovation salle de bain</option>
+                <option value="installation">🔧 Installation</option>
+                <option value="autre">📝 Autre</option>
               </select>
             </div>
             <div class="form-group">
-              <label for="message">Message *</label>
-              <textarea id="message" name="message" required rows="4" placeholder="Décrivez votre besoin..."></textarea>
+              <label for="message">Décrivez votre problème</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Décrivez brièvement votre besoin..."
+              ></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-full">Envoyer Ma Demande</button>
-            <p class="form-note">Nous vous répondons dans l'heure. Vos données sont protégées.</p>
+            <button type="submit" class="btn btn-primary btn-lg">
+              Envoyer ma demande →
+            </button>
+            <p class="form-note">
+              <span>✓</span> Devis 100% gratuit &nbsp;|&nbsp;
+              <span>✓</span> Réponse sous 1h &nbsp;|&nbsp; <span>✓</span> Sans
+              engagement
+            </p>
           </form>
         </div>
       </div>
     </section>
-  </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <a href="#" class="logo">
-            <span class="logo-icon">🔧</span>
-            <span class="logo-text">Plombi<span class="highlight">Pro</span></span>
-          </a>
-          <p>Votre plombier de confiance depuis 15 ans. Service professionnel et garanti.</p>
-        </div>
-        <div class="footer-links">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="#services">Recherche de fuites</a></li>
-            <li><a href="#services">Débouchage</a></li>
-            <li><a href="#services">Chauffe-eau</a></li>
-            <li><a href="#services">Rénovation</a></li>
-          </ul>
-        </div>
-        <div class="footer-links">
-          <h4>Informations</h4>
-          <ul>
-            <li><a href="#pourquoi-nous">À propos</a></li>
-            <li><a href="#temoignages">Avis clients</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#">Mentions légales</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact">
-          <h4>Contact</h4>
-          <a href="tel:+33123456789" class="footer-phone">01 23 45 67 89</a>
-          <a href="mailto:contact@plombipro.fr">contact@plombipro.fr</a>
-          <span>Paris et Île-de-France</span>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 PlombiPro. Tous droits réservés.</p>
+    <div class="urgency-banner">
+      <div class="container">
+        <strong>🚨 Urgence plomberie ?</strong>
+        <span
+          >Nos techniciens sont prêts à intervenir dans les 30 minutes.</span
+        >
+        <a href="tel:+33123456789" class="btn">📞 Appeler maintenant</a>
       </div>
     </div>
-  </footer>
 
-  <a href="tel:+33123456789" class="floating-cta" aria-label="Appeler maintenant">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-    </svg>
-  </a>
+    <section class="services" id="services" aria-label="Nos services">
+      <div class="container">
+        <div class="text-center">
+          <div class="section-badge">🔧 Nos Services</div>
+          <h2 class="section-title">Des solutions pour chaque besoin</h2>
+          <p class="section-subtitle">
+            De l'urgence à la rénovation, nos plombiers certifiés prennent en
+            charge tous vos travaux de plomberie.
+          </p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">🚨</div>
+            <h3>Urgence & Fuite d'eau</h3>
+            <p>
+              Intervention en 30 minutes pour réparer toute fuite d'eau.
+              Détection et réparation rapide pour limiter les dégâts.
+            </p>
+            <a href="#devis" class="service-link"
+              >Demander une intervention →</a
+            >
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🚿</div>
+            <h3>Débouchage canalisations</h3>
+            <p>
+              Débouchage efficace de vos canalisations, WC, éviers et douches
+              avec matériel professionnel haute pression.
+            </p>
+            <a href="#devis" class="service-link">Demander un débouchage →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🔥</div>
+            <h3>Chauffe-eau & Chaudière</h3>
+            <p>
+              Installation, entretien et réparation de chauffe-eau (électrique,
+              gaz) et chaudière. Toutes marques.
+            </p>
+            <a href="#devis" class="service-link">Obtenir un devis →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🛁</div>
+            <h3>Rénovation salle de bain</h3>
+            <p>
+              Rénovation complète de votre salle de bain. Design moderne, choix
+              des matériaux et pose par nos experts.
+            </p>
+            <a href="#devis" class="service-link">Planifier mon projet →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🔧</div>
+            <h3>Installation & Remplacement</h3>
+            <p>
+              Installation de robinetterie, WC, lave-linge, lave-vaisselle.
+              Remplacement de tuyauterie ancienne.
+            </p>
+            <a href="#devis" class="service-link">Demander un devis →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🔍</div>
+            <h3>Recherche de fuite</h3>
+            <p>
+              Détection de fuites non visibles par caméra thermique et gaz
+              traceur. Diagnostic précis sans casse.
+            </p>
+            <a href="#devis" class="service-link">Faire un diagnostic →</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <script src="script.js"></script>
-</body>
+    <section class="stats" aria-label="Nos chiffres">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3>15+</h3>
+            <p>Années d'expérience</p>
+          </div>
+          <div class="stat-item">
+            <h3>12 000+</h3>
+            <p>Interventions réalisées</p>
+          </div>
+          <div class="stat-item">
+            <h3>98%</h3>
+            <p>Clients satisfaits</p>
+          </div>
+          <div class="stat-item">
+            <h3>30 min</h3>
+            <p>Temps d'intervention moyen</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-us" id="avantages" aria-label="Pourquoi nous choisir">
+      <div class="container">
+        <div class="text-center">
+          <div class="section-badge">⭐ Pourquoi Nous Choisir</div>
+          <h2 class="section-title">Ce qui nous différencie</h2>
+          <p class="section-subtitle">
+            PlombiPro, c'est la garantie d'un service professionnel, transparent
+            et fiable.
+          </p>
+        </div>
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-icon">⚡</div>
+            <h3>Intervention en 30 min</h3>
+            <p>
+              Nos techniciens sont répartis dans toute la ville pour une
+              intervention ultra-rapide.
+            </p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">💰</div>
+            <h3>Prix transparents</h3>
+            <p>
+              Devis détaillé et gratuit avant chaque intervention. Aucune
+              surprise sur la facture.
+            </p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">🏆</div>
+            <h3>Artisans certifiés</h3>
+            <p>
+              Nos plombiers sont qualifiés, certifiés et formés aux dernières
+              techniques.
+            </p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">🛡️</div>
+            <h3>Garantie décennale</h3>
+            <p>
+              Tous nos travaux sont couverts par une garantie décennale pour
+              votre tranquillité.
+            </p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">🕐</div>
+            <h3>Disponible 24h/24</h3>
+            <p>
+              Urgence le week-end, jour férié ou en pleine nuit ? Nous sommes
+              toujours là.
+            </p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">♻️</div>
+            <h3>Travail propre</h3>
+            <p>
+              Nous protégeons votre intérieur et nettoyons tout après notre
+              intervention.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" aria-label="Notre processus">
+      <div class="container">
+        <div class="text-center">
+          <div class="section-badge">📋 Notre Processus</div>
+          <h2 class="section-title">Simple, rapide, efficace</h2>
+          <p class="section-subtitle">
+            En 4 étapes, nous réglons votre problème de plomberie.
+          </p>
+        </div>
+        <div class="process-steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Contact</h3>
+            <p>
+              Appelez-nous ou remplissez le formulaire. Nous vous répondons sous
+              1 heure.
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Diagnostic</h3>
+            <p>
+              Un technicien se déplace pour évaluer le problème et vous fournir
+              un devis gratuit.
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Intervention</h3>
+            <p>
+              Après votre accord, nous effectuons les travaux avec du matériel
+              professionnel.
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <h3>Garantie</h3>
+            <p>
+              Vérification finale, nettoyage et remise de la garantie décennale.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="testimonials"
+      id="temoignages"
+      aria-label="Témoignages clients"
+    >
+      <div class="container">
+        <div class="text-center">
+          <div class="section-badge">💬 Avis Clients</div>
+          <h2 class="section-title">Ce que nos clients disent de nous</h2>
+          <p class="section-subtitle">
+            +500 clients satisfaits nous font confiance. Découvrez leurs
+            témoignages.
+          </p>
+        </div>
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              « Fuite d'eau en pleine nuit à 2h du matin. J'ai appelé PlombiPro
+              et en 25 minutes, le plombier était chez moi. Travail impeccable
+              et prix très raisonnable. Je recommande à 100% ! »
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">ML</div>
+              <div class="author-info">
+                <strong>Marie Laurent</strong
+                ><span>Paris 15ème — Urgence fuite</span>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              « Rénovation complète de notre salle de bain. L'équipe a été
+              professionnelle du début à la fin. Le résultat est magnifique et
+              dans les délais annoncés. Merci PlombiPro ! »
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">TD</div>
+              <div class="author-info">
+                <strong>Thomas Durand</strong
+                ><span>Boulogne — Rénovation SDB</span>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              « Débouchage de canalisation effectué rapidement. Le technicien
+              était ponctuel, courtois et a pris le temps de m'expliquer le
+              problème. Tarif clair et sans surprise. Parfait ! »
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SB</div>
+              <div class="author-info">
+                <strong>Sophie Bernard</strong
+                ><span>Versailles — Débouchage</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="zones" id="zones" aria-label="Zones d'intervention">
+      <div class="container">
+        <div class="zones-content">
+          <div class="zones-text">
+            <div class="section-badge">📍 Zones d'intervention</div>
+            <h2>Nous intervenons dans toute l'agglomération</h2>
+            <p>
+              Nos équipes sont réparties stratégiquement pour garantir une
+              intervention rapide partout dans la région. Nous couvrons un rayon
+              de 50 km.
+            </p>
+            <div class="zones-list">
+              <div class="zone-item">Paris centre</div>
+              <div class="zone-item">Paris Nord</div>
+              <div class="zone-item">Paris Sud</div>
+              <div class="zone-item">Paris Est</div>
+              <div class="zone-item">Paris Ouest</div>
+              <div class="zone-item">Boulogne-Billancourt</div>
+              <div class="zone-item">Neuilly-sur-Seine</div>
+              <div class="zone-item">Levallois-Perret</div>
+              <div class="zone-item">Versailles</div>
+              <div class="zone-item">Issy-les-Moulineaux</div>
+              <div class="zone-item">Saint-Denis</div>
+              <div class="zone-item">Montreuil</div>
+              <div class="zone-item">Vincennes</div>
+              <div class="zone-item">Clamart</div>
+              <div class="zone-item">Antony</div>
+              <div class="zone-item">Et toute l'Île-de-France</div>
+            </div>
+          </div>
+          <div class="zones-map">🗺️</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq" aria-label="Questions fréquentes">
+      <div class="container">
+        <div class="text-center">
+          <div class="section-badge">❓ FAQ</div>
+          <h2 class="section-title">Questions fréquentes</h2>
+          <p class="section-subtitle">
+            Trouvez rapidement les réponses à vos questions.
+          </p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              Quel est le délai d'intervention ?<span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Nous intervenons en moyenne en 30 minutes dans un rayon de 20
+                km. Pour les urgences (fuite importante, inondation), nous
+                priorisons votre intervention et pouvons être chez vous en 20
+                minutes.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Le devis est-il vraiment gratuit ?<span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Oui, le devis est 100% gratuit et sans engagement. Un technicien
+                se déplace chez vous, évalue le travail nécessaire et vous
+                fournit un devis détaillé. Vous êtes libre de l'accepter ou non.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Intervenez-vous le week-end et les jours fériés ?<span
+                class="faq-icon"
+                >+</span
+              >
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Absolument ! Nous sommes disponibles 24h/24 et 7j/7, y compris
+                les week-ends, jours fériés et en pleine nuit. Un service
+                d'astreinte est assuré en permanence pour répondre à vos
+                urgences.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Quels modes de paiement acceptez-vous ?<span class="faq-icon"
+                >+</span
+              >
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Nous acceptons les paiements par carte bancaire, espèces,
+                virement bancaire et chèque. Un paiement en plusieurs fois est
+                possible pour les travaux de rénovation importants.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Vos travaux sont-ils garantis ?<span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Oui, tous nos travaux sont couverts par une garantie décennale.
+                Nous sommes également assurés en responsabilité civile
+                professionnelle. Vous pouvez nous faire confiance les yeux
+                fermés.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Comment prévenir une fuite d'eau ?<span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Pour prévenir les fuites, nous recommandons un entretien annuel
+                de vos installations, de vérifier régulièrement la pression de
+                l'eau, de ne pas jeter de corps étrangers dans les canalisations
+                et de remplacer les joints usés. Nous proposons des contrats de
+                maintenance.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" aria-label="Contactez-nous">
+      <div class="container">
+        <h2>Besoin d'un plombier maintenant ?</h2>
+        <a href="tel:+33123456789" class="cta-phone">📞 01 23 45 67 89</a>
+        <p>Disponible 24h/24 — Devis gratuit — Intervention en 30 minutes</p>
+        <div class="cta-buttons">
+          <a href="tel:+33123456789" class="btn btn-accent btn-lg"
+            >📞 Appeler maintenant</a
+          >
+          <a href="#devis" class="btn btn-outline btn-lg"
+            >📋 Devis gratuit en ligne</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo">
+              <div class="logo__icon">🔧</div>
+              Plombi<span>Pro</span>
+            </div>
+            <p>
+              Plombier professionnel depuis 2011. Nous offrons un service de
+              qualité, rapide et fiable pour tous vos besoins en plomberie.
+              Disponible 24h/24 et 7j/7.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Facebook">f</a>
+              <a href="#" class="social-link" aria-label="Instagram">📷</a>
+              <a href="#" class="social-link" aria-label="Google">G</a>
+            </div>
+          </div>
+          <div>
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#">Urgence plomberie</a></li>
+              <li><a href="#">Fuite d'eau</a></li>
+              <li><a href="#">Débouchage</a></li>
+              <li><a href="#">Chauffe-eau</a></li>
+              <li><a href="#">Rénovation SDB</a></li>
+              <li><a href="#">Recherche de fuite</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Liens utiles</h4>
+            <ul>
+              <li><a href="#">À propos</a></li>
+              <li><a href="#">Nos réalisations</a></li>
+              <li><a href="#">Blog conseils</a></li>
+              <li><a href="#">Mentions légales</a></li>
+              <li><a href="#">Politique de confidentialité</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <ul class="footer-contact">
+              <li>📍 12 rue de la Plomberie, 75015 Paris</li>
+              <li>
+                📞
+                <a href="tel:+33123456789" style="color: var(--accent)"
+                  >01 23 45 67 89</a
+                >
+              </li>
+              <li>✉️ contact@PlombiPro-plomberie.fr</li>
+              <li>🕐 Disponible 24h/24 — 7j/7</li>
+              <li>SIRET : 123 456 789 00012</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            © 2025 PlombiPro — Tous droits réservés | Fait avec ❤️ pour nos
+            clients
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="floating-cta">
+      <a href="tel:+33123456789" class="btn btn-accent">📞 Appeler</a>
+      <a href="#devis" class="btn btn-primary">📋 Devis gratuit</a>
+    </div>
+
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Plumber",
+        "name": "PlombiPro",
+        "description": "Plombier professionnel disponible 24h/24. Intervention rapide pour fuite, débouchage, chauffe-eau et rénovation.",
+        "url": "https://www.PlombiPro-plomberie.fr",
+        "telephone": "+33123456789",
+        "email": "contact@PlombiPro-plomberie.fr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "12 rue de la Plomberie",
+          "addressLocality": "Paris",
+          "postalCode": "75015",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "48.8566",
+          "longitude": "2.3522"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        },
+        "priceRange": "€€",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "523"
+        },
+        "areaServed": { "@type": "City", "name": "Paris et Île-de-France" }
+      }
+    </script>
+  </body>
 </html>
